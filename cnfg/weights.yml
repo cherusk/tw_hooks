@@ -1,0 +1,10 @@
+---
+
+# Coefficients to UDAs from 0 - 4
+
+root:
+    weights:
+        obligation: 1
+        material: 1
+        impact: 1
+        preference: 1
