@@ -21,7 +21,7 @@ def receive_tasks():
 
 def load_cnfg(_file):
     with open(_file, "r") as w_f:
-        cnfg = yaml.load(w_f)
+        cnfg = yaml.load(w_f, Loader=yaml.FullLoader)
         return cnfg
 
 if __name__ == "__main__":
