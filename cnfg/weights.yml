@@ -5,6 +5,6 @@
 root:
     weights:
         obligation: 1
-        material: 1
+        economic: 1
         impact: 1
         preference: 1
