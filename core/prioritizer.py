@@ -43,9 +43,9 @@ class Prioritizer:
         for key, val in weights.items():
             try:
                 sub_prios.append(task[key] * val)
-            except KeyError:
+            except KeyError as e:
                 self.cease(task, rc=2,
-                           msg='Weights cnfg to UDA definition discrepancy.')
+                           msg='Weights cnfg to UDA definition discrepancy. {}{}'.format(e, task))
 
         return sum(sub_prios)
 
